@@ -1,0 +1,27 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+#export DH_VERBOSE = 1
+
+# Prevent setuptools/distribute from accessing the internet.
+export http_proxy = http://127.0.9.1:9
+
+# This has to be exported to make some magic below work.
+export DH_OPTIONS
+
+export PYBUILD_DISABLE_python2.7=test
+
+%:
+	dh $@ --with python3
+
+override_dh_auto_build:
+	python3 setup.py build
+
+override_dh_auto_install:
+	python3 setup.py install --root=$(CURDIR)/debian/radon/ --install-layout=deb
+
+override_dh_auto_clean:
+	python3 setup.py clean -a
+	find . -path '*/__pycache__/*' -delete
+	find . -type d -name '__pycache__' -empty -delete
+
