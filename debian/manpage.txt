@@ -1,7 +1,0 @@
-https://dzone.com/articles/what-exactly-is-mccabe-cyclomatic-complexity
-
-McCabe: simply the number of independent paths that exist between the input of the function and its output
-
-output - first column indicates F M C - function method class.
-
-Use --exclude "*/filename.py" to skip a particular file(s)

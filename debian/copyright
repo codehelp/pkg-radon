@@ -3,7 +3,7 @@ Upstream-Name: radon
 Source: https://github.com/rubik/radon
 
 Files: *
-Copyright: Copyright (c) 2012-2017 Michele Lacchia
+Copyright: 2012-2017 Michele Lacchia
 License: BSD-3-Clause
 
 Files: debian/*

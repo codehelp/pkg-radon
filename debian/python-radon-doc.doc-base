@@ -1,0 +1,16 @@
+Document: radon
+Title: Debian radon Manual
+Author: Michele Lacchia
+Abstract: This manual describes Radon 
+ A Python tool which computes various code metrics. Supported metrics are:
+  raw metrics: SLOC, comment lines, blank lines, &c.
+  Cyclomatic Complexity (i.e. McCabe’s Complexity)
+  Halstead metrics (all of them)
+  the Maintainability Index (a Visual Studio metric)
+ .
+ Radon can be used either from the command line or programmatically through its API.
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python-radon-doc/html/index.html
+Files: /usr/share/doc/python-radon-doc/html/*.html

@@ -3,6 +3,10 @@
 # output every command that modifies files on the build system.
 #export DH_VERBOSE = 1
 
+include /usr/share/dpkg/pkg-info.mk
+
+export BUILD_DATE=$(shell LC_ALL=C date -u "+%B %d, %Y" -d @"$(SOURCE_DATE_EPOCH)")
+
 # Prevent setuptools/distribute from accessing the internet.
 export http_proxy = http://127.0.9.1:9
 
@@ -12,13 +16,19 @@ export DH_OPTIONS
 export PYBUILD_DISABLE_python2.7=test
 
 %:
-	dh $@ --with python3
+	dh $@ --with sphinxdoc,python3
 
 override_dh_auto_build:
 	python3 setup.py build
+	make -C docs/ html SPHINXBUILD="/usr/share/sphinx/scripts/python3/sphinx-build" SPHINXOPTS="-j 4 -D today=\"$(BUILD_DATE)\""
+	${RM} -r docs/_build/html/_static/jax docs/_build/html/_static/extensions
+	${RM} -r docs/_build/html/_static/fonts/HTML-CSS/TeX
+	$(RM) doc/v2/_build/html/objects.inv
 
 override_dh_auto_install:
 	python3 setup.py install --root=$(CURDIR)/debian/radon/ --install-layout=deb
+	rst2man debian/radon.rst > debian/radon.1
+	dh_installman -pradon debian/radon.1
 
 override_dh_auto_clean:
 	python3 setup.py clean -a
