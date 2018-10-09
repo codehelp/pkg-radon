@@ -1,3 +1,12 @@
+radon (2.3.1+dfsg-1) unstable; urgency=medium
+
+  * Repack to remove files already included in libjs-mathjax
+  * Complete debian/copyright for remaining files. (Closes: #910659)
+  * Drop watch file, upstream has stopped creating release tags.
+  * Switch radon to Arch:all
+
+ -- Neil Williams <codehelp@debian.org>  Tue, 09 Oct 2018 14:41:16 +0100
+
 radon (2.3.1-1) unstable; urgency=medium
 
   * Initial release. (Closes: #910563: ITP: radon -- Code metric

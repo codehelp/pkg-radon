@@ -1,8 +1,0 @@
-# Compulsory line, this is a version 4 file
-version=4
-
-# GitHub hosted projects
-
-opts=filenamemangle=s/.+\/v?(\d\S+)\.tar\.gz/radon-$1\.tar\.gz/ \
-  https://github.com/rubik/radon/tags .*/v?(\d\S+)\.tar\.gz
-
