@@ -12,7 +12,7 @@ Vcs-Git: https://salsa.debian.org/python-team/applications/radon.git
 Vcs-Browser: https://salsa.debian.org/python-team/applications/radon.git
 
 Package: radon
-Architecture: any
+Architecture: all
 Depends: python3-pkg-resources, ${python3:Depends}, ${misc:Depends}
 Description: Python tool to compute code metrics (Python3)
  Radon is a Python tool which computes various code metrics.
@@ -29,7 +29,7 @@ Description: Python tool to compute code metrics (Python3)
 Package: python-radon-doc
 Architecture: all
 Section: doc
-Depends: ${sphinxdoc:Depends}, ${misc:Depends}
+Depends: libjs-mathjax, ${sphinxdoc:Depends}, ${misc:Depends}
 Description: Python tool to compute code metrics (common documentation)
  Radon is a Python tool which computes various code metrics.
  Supported metrics are:

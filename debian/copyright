@@ -6,6 +6,10 @@ Files: *
 Copyright: 2012-2017 Michele Lacchia
 License: BSD-3-Clause
 
+Files: ./docs/_themes/solar/static/solar.css
+Copyright: 2007-2011 by the Sphinx team
+License: BSD-3-Clause
+
 Files: debian/*
 Copyright: 2018 Neil Williams <codehelp@debian.org>
 License: BSD-3-Clause
