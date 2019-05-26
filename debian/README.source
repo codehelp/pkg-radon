@@ -1,0 +1,8 @@
+DFSG changes
+============
+
+Removing docs/_static as this content is replaced by the
+dependency on libjs-mathjax in the dependencies of
+python-radon-doc.
+
+
