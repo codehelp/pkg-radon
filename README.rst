@@ -1,7 +1,7 @@
 Radon
 =====
 
-.. image:: https://img.shields.io/codacy/623b84f5f6e6708c486f371e10da3610.svg
+.. image:: https://img.shields.io/codacy/grade/623b84f5f6e6708c486f371e10da3610.svg
    :alt: Codacy badge
    :target: https://www.codacy.com/app/rubik/radon/dashboard
 
@@ -39,9 +39,10 @@ Radon can compute:
 Requirements
 ------------
 
-Radon will run from **Python 2.7** to **Python 3.6** with a single code base
-and without the need of tools like 2to3 or six. It can also run on **PyPy**
-without any problems (currently PyPy 5.8.0 is used in tests).
+Radon will run from **Python 2.7** to **Python 3.7** (except Python versions
+from 3.0 to 3.3) with a single code base and without the need of tools like
+2to3 or six. It can also run on **PyPy** without any problems (currently PyPy
+5.8.0 is used in tests).
 
 Radon depends on as few packages as possible. Currently only `mando` is
 strictly required (for the CLI interface). `colorama` is also listed as a
@@ -146,10 +147,10 @@ To understand how to add Radon's checks to your Code Climate Platform, head
 over to their documentation:
 https://docs.codeclimate.com/v1.0/docs/radon
 
-Coala Analyzer
+coala Analyzer
 ++++++++++++++
 
-Radon is also supported in `coala <http://coala-analyzer.org/>`_. To add Radon's
+Radon is also supported in `coala <http://coala.io/>`_. To add Radon's
 checks to coala, simply add the ``RadonBear`` to one of the sections in
 your ``.coafile``.
 

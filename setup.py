@@ -20,8 +20,9 @@ setup(name='radon',
       tests_require=['tox'],
       install_requires=[
           'mando>=0.6,<0.7',
-          'colorama>=0.3,<0.4',
+          'colorama>=0.4,<0.5',
           'flake8-polyfill',
+          'future',
       ],
       entry_points={
           'console_scripts': ['radon = radon:main'],
