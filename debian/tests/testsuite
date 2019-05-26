@@ -1,0 +1,1 @@
+PYTHONPATH=. pytest-3 debian/radon/usr/lib/python3/dist-packages/radon

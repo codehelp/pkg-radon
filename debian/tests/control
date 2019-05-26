@@ -1,0 +1,4 @@
+Tests: testsuite
+Depends: @builddeps@, python3-pytest-mock, radon
+Restrictions: allow-stderr, needs-root
+

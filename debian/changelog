@@ -3,6 +3,7 @@ radon (3.0.3+dfsg-1) UNRELEASED; urgency=medium
   * New upstream release
   * Stage changes for later upload to unstable once buster is released.
   * Apply upstream fix to make the build reproducible (Closes: #912152)
+  * Add autopkgtest support
 
  -- Neil Williams <codehelp@debian.org>  Sun, 26 May 2019 15:15:45 +0100
 
