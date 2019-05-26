@@ -1,3 +1,9 @@
+radon (2.3.1-2) UNRELEASED; urgency=medium
+
+  * Complete debian/copyright (Closes: #910659)
+
+ -- Neil Williams <codehelp@debian.org>  Tue, 09 Oct 2018 13:28:51 +0100
+
 radon (2.3.1-1) unstable; urgency=medium
 
   * Initial release. (Closes: #910563: ITP: radon -- Code metric
