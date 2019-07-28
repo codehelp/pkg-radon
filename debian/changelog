@@ -1,4 +1,4 @@
-radon (3.0.3+dfsg-1) UNRELEASED; urgency=medium
+radon (3.0.3+dfsg-1) unstable; urgency=medium
 
   [ Neil Williams ]
   * New upstream release
@@ -9,7 +9,7 @@ radon (3.0.3+dfsg-1) UNRELEASED; urgency=medium
   [ Ondřej Nový ]
   * Use debhelper-compat instead of debian/compat.
 
- -- Neil Williams <codehelp@debian.org>  Sun, 26 May 2019 15:15:45 +0100
+ -- Neil Williams <codehelp@debian.org>  Sun, 28 Jul 2019 16:33:16 +0100
 
 radon (2.3.1+dfsg-1) unstable; urgency=medium
 
